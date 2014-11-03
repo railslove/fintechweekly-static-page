@@ -214,7 +214,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -231,7 +231,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -312,23 +312,6 @@ ul.banner-social-buttons {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
 
 footer {
     padding: 50px 0;
@@ -368,4 +351,64 @@ body {
 
 input {
     color: #000;
+}
+
+.email-field-group{
+  position: relative;
+  background: rgba(255, 0, 0, 0.66);
+  margin-bottom: 20px;
+}
+
+.email-field-group #mce-EMAIL {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    height: 50px;
+}
+.email-field-group #mc-embedded-subscribe{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0;
+    border: 1px solid black;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    transition: 0.2s ease-in-out all;
+    height: 46px;
+}
+.email-field-group #mc-embedded-subscribe:hover{
+    background: white;
+    color: black;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+    .email-field-group{
+        margin-bottom: 60px;
+    }
+    .email-field-group #mc-embedded-subscribe{
+        top: inherit;
+        width: 100%;
+        left: 0;
+    }
+    .mce_inline_error{
+        padding-top: 50px;
+    }
 }
