@@ -353,19 +353,19 @@ input {
     color: #000;
 }
 
-.email-field-group{
+.top-form .email-field-group{
   position: relative;
   background: rgba(255, 0, 0, 0.66);
   margin-bottom: 20px;
 }
 
-.email-field-group #mce-EMAIL {
+.top-form .email-field-group #mce-EMAIL {
     width: 100%;
     padding: 10px 20px;
     font-size: 18px;
     height: 50px;
 }
-.email-field-group #mc-embedded-subscribe{
+.top-form .email-field-group #mc-embedded-subscribe{
     position: absolute;
     right: 2px;
     top: 2px;
@@ -379,7 +379,7 @@ input {
     transition: 0.2s ease-in-out all;
     height: 46px;
 }
-.email-field-group #mc-embedded-subscribe:hover{
+.top-form .email-field-group #mc-embedded-subscribe:hover{
     background: white;
     color: black;
 }
@@ -400,15 +400,15 @@ input {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
-    .email-field-group{
+    .top-form .email-field-group{
         margin-bottom: 60px;
     }
-    .email-field-group #mc-embedded-subscribe{
+    .top-form .email-field-group #mc-embedded-subscribe{
         top: inherit;
         width: 100%;
         left: 0;
     }
-    .mce_inline_error{
+    .top-form .mce_inline_error{
         padding-top: 50px;
     }
 }
